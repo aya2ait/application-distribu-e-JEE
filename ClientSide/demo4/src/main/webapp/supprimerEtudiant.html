@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Supprimer un Étudiant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #afa2df;
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .form-container {
+            width: 50%;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .form-container label, .form-container input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #afa2df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #a695e3;
+        }
+    </style>
+</head>
+<body>
+<h1>Supprimer un Étudiant</h1>
+<div class="form-container">
+    <form method="POST" action="supprimerEtudiant">
+        <label for="idEtudiant">ID Étudiant:</label>
+        <input type="text" id="idEtudiant" name="idEtudiant" required>
+
+        <button type="submit">Supprimer</button>
+    </form>
+</div>
+</body>
+</html>
